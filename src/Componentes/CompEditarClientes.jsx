@@ -20,7 +20,7 @@ const CompEditarClientes = () => {
     //funcion actualizar
     const editarClientes = async (e) => {
         e.preventDefault();
-        await axios.put(`${URL}${id}`, {
+        await axios.patch(`${URL}${id}`, {
             nombres: nombres,
             apellidos: apellidos,
             cedula: cedula,
